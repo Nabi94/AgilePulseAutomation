@@ -2,7 +2,7 @@ name: My First Pipeline   # Adı
 
 on:                      # Nə vaxt işləsin
   push:
-    branches: [ main ]   # main branch-a push olanda
+    branches: [ master ]   # main branch-a push olanda
 
 jobs:                    # Robotun işləri
   build:
