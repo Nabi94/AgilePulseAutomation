@@ -1,0 +1,16 @@
+name: My First Pipeline   # Adı
+
+on:                      # Nə vaxt işləsin
+  push:
+    branches: [ main ]   # main branch-a push olanda
+
+jobs:                    # Robotun işləri
+  build:
+    runs-on: ubuntu-latest   # Linux sistemi istifadə edir
+
+    steps:               # Addımlar
+      - name: Get code
+        uses: actions/checkout@v4  # Kodu GitHub-dan götürür
+
+      - name: Say hello
+        run: echo "Hello qaqa, pipeline started!"  # Sadə yazı göstərir
